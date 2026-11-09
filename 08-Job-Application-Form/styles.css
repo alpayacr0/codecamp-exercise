@@ -1,0 +1,80 @@
+body {
+  background-color: #30250d;
+}
+
+.container {
+  background-color: #fdfcf9;
+  width: 80%;
+  max-width: 600px;
+  margin: 20% auto;
+  box-shadow: 0 5px 15px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  background-color: #fdfcf9;
+  border: 1.5px solid #c9c2b3; /* nötr, yumuşak border */
+  border-radius: 6px;
+  padding: 8px;
+  color: #3a3630;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+button:hover {
+  background-color: cadetblue;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: 0 0 5px green;
+}
+input[type="radio"]:checked + label {
+  color: green;
+  font-weight: bold;
+}
+
+input:first-of-type {
+  border-radius: 5px 5px 0 0;
+}
+
+button[type="submit"] {
+  background-color: #7a9b76;
+  color: #fdfcf9;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #648261;
+}

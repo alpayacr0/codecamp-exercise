@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.todo-list-div {
+  background-color: #f5f5f0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+}
+
+.todo-list {
+  list-style-type: none;
+}
+
+.sub-item-link {
+  text-decoration: none;
+}
+
+.sub-item {
+  list-style-type: square;
+}
+
+a:link {
+  color: pink;
+}
+a:hover {
+  color: greenyellow;
+}
+a:active {
+  color: orange;
+}
+a:focus {
+  color: red;
+  outline: solid;
+}
+a:visited {
+  color: blue;
+}
