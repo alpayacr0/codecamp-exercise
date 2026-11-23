@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: #f5f6f7;
   color: #1b1b32;
@@ -10,6 +16,8 @@ header {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
@@ -22,6 +30,17 @@ header {
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+
+main {
+  padding-top: 25px;
+}
+
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
 }
 
 nav {
@@ -33,6 +52,32 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: #dfdfe2;
 }
 
 h1,
@@ -42,10 +87,92 @@ h2 {
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin: 30px 0 0 0;
+  padding: 0 15px 0 15px;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.info > input {
+  width: 50%;
+  text-align: left;
+}
+
+.info > label {
+  width: 10%;
+  min-width: 55px;
+}
+
+.info > label,
+.info > input {
+  display: inline-block;
+}
+
+label {
+  text-align: right;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 1.375rem;
 }
 
 h3:before {
   content: "Question #";
+}
+
+.question {
+  padding-bottom: 0px;
+  border: none;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0px;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 1.438rem;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+
+footer,
+footer a {
+  color: #fff;
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
+}
+
+address {
+  text-align: center;
+  padding: 1px;
+  color: #fff;
 }
 
 .sr-only {
